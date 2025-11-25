@@ -13,7 +13,7 @@ CORS(app, resources={r"/*": {"origins": ["*"]}})
 # ---------------------------------------
 # 1. CARGAR MODELO TFLITE
 # ---------------------------------------
-TFLITE_PATH = "FundusDetection_Model.tflite"
+TFLITE_PATH = "FundusDetection_Model_COMPAT.tflite"
 
 interpreter = tf.lite.Interpreter(model_path=TFLITE_PATH)
 interpreter.allocate_tensors()
